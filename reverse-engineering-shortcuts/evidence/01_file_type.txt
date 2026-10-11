@@ -1,0 +1,8 @@
+$ file treasurebox.tgz
+treasurebox.tgz: RAR archive data, v5
+
+$ tar -tzvf treasurebox.tgz
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now

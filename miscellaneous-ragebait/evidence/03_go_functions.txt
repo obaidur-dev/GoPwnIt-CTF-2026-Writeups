@@ -1,0 +1,27 @@
+$ python3 helpers/pcln.py dist/golev_windows_amd64.exe
+0x1400b6ce0 ragebait/golev/internal/antiai.DetectDebugger
+0x1400b6da0 ragebait/golev/internal/crypto.RoundF
+0x1400b6e20 ragebait/golev/internal/crypto.executeWithTrampoline
+0x1400b6f00 ragebait/golev/internal/crypto.executeWithTrampoline.func1
+0x1400b6fc0 ragebait/golev/internal/crypto.EncryptPayload
+0x1400b7d40 ragebait/golev/internal/engine.(*CSPPipeline).Start
+0x1400b7f00 ragebait/golev/internal/engine.(*CSPPipeline).Start.func5
+0x1400b8060 ragebait/golev/internal/engine.(*CSPPipeline).Start.func5.deferwrap2
+0x1400b80c0 ragebait/golev/internal/engine.(*CSPPipeline).Start.func5.deferwrap1
+0x1400b8120 ragebait/golev/internal/engine.(*CSPPipeline).Start.func4
+0x1400b8340 ragebait/golev/internal/engine.(*CSPPipeline).Start.func4.deferwrap1
+0x1400b83a0 ragebait/golev/internal/engine.(*CSPPipeline).Start.func3
+0x1400b86a0 ragebait/golev/internal/engine.(*CSPPipeline).Start.func3.deferwrap1
+0x1400b8700 ragebait/golev/internal/engine.(*CSPPipeline).Start.func2
+0x1400b8940 ragebait/golev/internal/engine.(*CSPPipeline).Start.func2.deferwrap1
+0x1400b89a0 ragebait/golev/internal/engine.(*CSPPipeline).Start.func1
+0x1400b8cc0 ragebait/golev/internal/engine.(*CSPPipeline).Start.func1.deferwrap1
+0x1400b8d20 ragebait/golev/internal/engine.(*CSPPipeline).Process
+0x1400b8fa0 ragebait/golev/internal/engine.NewEgoOracle
+0x1400b9140 ragebait/golev/internal/engine.(*EgoOracle).Evaluate
+0x1400b9460 ragebait/golev/internal/engine.levenshteinDistance
+0x1400b9840 ragebait/golev/internal/engine.FormatEgoReport
+0x1400ba080 ragebait/golev/internal/engine.GetBinaryRuntimeHash
+0x1400ba240 ragebait/golev/internal/engine.(*EgoVM).Execute
+0x1400ba7c0 main.printDiagnostics
+0x1400baa40 main.main

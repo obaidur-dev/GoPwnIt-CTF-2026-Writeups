@@ -1,0 +1,7 @@
+$ grep -v -e "health check OK" -e "IIS Request" files/logs.txt | head -3
+[2026-04-19 07:34:10.070] [WARN] SSH Login failure for user 'backup_adm' from 10.0.0.5 timezone +03:00
+[2026-04-19 07:34:11.076] [WARN] SSH Login failure for user 'backup_adm' from 10.0.0.5 timezone +03:00
+[2026-04-19 07:34:12.065] [WARN] SSH Login failure for user 'backup_adm' from 10.0.0.5 timezone +03:00
+
+$ grep -c "" logs.txt
+510

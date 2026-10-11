@@ -1,0 +1,6 @@
+$ echo AAAA | ./treasurebox   (wrong, short key)
+     +---- 
+     |
+     v\/\/\/\/\/\
+     |
+     +---> The box deems your key either too short or too long

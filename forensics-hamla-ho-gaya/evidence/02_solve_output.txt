@@ -1,0 +1,8 @@
+ssh ms values: [70, 76, 65, 71, 123, 84, 49, 109, 51, 95]
+part1: FLAG{T1m3_
+session ids: ['Zmww', 'dzVf', 'MW50', 'MF8='] auth_token: 42
+part2: fl0w5_1nt0_
+payload end marker at: 0x60002a
+payload xor 42 -> b'\x1eA\x8e#=\x81\x83\xe0\xc9p\x84\xefe@L\x99\xa0\xda\x9a\xf9\x81U+\xc4*"\xf5B\xd5\x95m3m0ry_v01d}'
+part3: m3m0ry_v01d}
+FLAG: FLAG{T1m3_fl0w5_1nt0_m3m0ry_v01d}

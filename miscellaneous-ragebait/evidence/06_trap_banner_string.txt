@@ -1,0 +1,18 @@
+string header 0x140126660 -> ptr 0x1401034fb len 1425 (printed when input == GPI{g0_l3v_...9f82c})
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║               [!] AI DETECTED: THE 1m 12s RECONSTRUCTION TRAP             ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+ [-] "Verification used reconstructed cipher logic, not native execution."
+ [-] Did you really paste the decompiled Feistel cipher into an LLM?
+ [-] An AI spent 1 minute 12 seconds in thinking mode reversing the bait!
+ [-] And you submitted it with the confidence of a senior security engineer.
+ [-] Scoreboard points awarded: 0.
+ [-] AI reliance detected: 100%.
+
+ [?] Did you think Level 1 was the real challenge? That was the filter.
+ [!] STAGE 2 UNLOCKED: THE REAL EGO CHECK.
+     The real flag requires native runtime execution and binary self-integrity.
+     Static cipher reconstruction without native execution will fail 100% of the time.
+─────────────────────────────────────────────────────────────────────────────
+

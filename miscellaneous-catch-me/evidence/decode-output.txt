@@ -1,0 +1,3 @@
+part1 alone : b'GPI{TH0NKYOU_D1R'
+part2 alone : b'\xc4\x94\xe4u\xf5C\x05\xf4c\x84\x94\xe4E\xf4\xd3\x17'
+joined      : GPI{TH0NKYOU_D1RLING_T0_F8IND_M1}

@@ -1,0 +1,8 @@
+$ strings -n 4 treasurebox | grep -iE "key|box|accept|dislike|toasterbirb|section"
+[5mThe box dislikes your key...
+[1;32mThe box happily accepts your key!
+     +---> The box deems your key either too short or too long
+the old section names were
+boring so i decided to
+where the .text section
+- toasterbirb

@@ -1,0 +1,11 @@
+$ python3 -I solve.py out/treasurebox --selftest
+targets at 0x3020: [b'algakrwu', b'mvauugrv', b'ppkcppwa', b'qkpatwif', b'qkknaema', b'vqpnuvak', b'ptapcgnw', b'gfgadfcc']
+selftest: my forward() matches the real binary on 300 of 300 random keys
+0 0 b'jie__epptks_tssuiounannunn_idr_gittnlic_oolk_si_re__nbeadndeuaal' forward == target: False
+0 1 b'j_s_eipttk_epsusoigninn_nn_adruuottlli__oincks_inee_ndaedrb_uaal' forward == target: False
+1 0 b'utej_etik__psssponninu_uriand_gntino_tclio_s_like_arbaenne_dadlu' forward == target: False
+1 1 b'it_just_keeps_spinning_around_until_it_looks_nice_and_unreadable' forward == target: True
+1 valid key(s)
+binary says accepted: True
+KEY: it_just_keeps_spinning_around_until_it_looks_nice_and_unreadable
+FLAG: GPI{it_just_keeps_spinning_around_until_it_looks_nice_and_unreadable}

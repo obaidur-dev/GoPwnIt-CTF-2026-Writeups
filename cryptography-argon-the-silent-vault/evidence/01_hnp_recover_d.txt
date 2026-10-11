@@ -1,0 +1,14 @@
+$ ls -la pkg
+total 60
+drwxr-xr-x 2 root root  4096 Oct 10 13:45 .
+drwx------ 5 root root  4096 Oct 11 06:11 ..
+-rw-rw-rw- 1 root root  9932 Oct 10 17:24 challenge.py
+-rw-rw-rw- 1 root root  1920 Oct 10 17:23 diagnostics.bin
+-rw-rw-rw- 1 root root  1110 Oct 10 17:23 public.json
+-rw-rw-rw- 1 root root  1687 Oct 10 17:23 recovery.enc
+-rw-rw-rw- 1 root root 24568 Oct 10 17:23 signatures.jsonl
+-rw-rw-rw- 1 root root    71 Oct 10 17:23 vault.enc
+
+$ python3 -I solve1_hnp.py pkg
+96 96 {66} 96
+d = 0xeece93923506b3f32b4212b72a7fa5094a411becd06d2d00ce7452d4223a050c

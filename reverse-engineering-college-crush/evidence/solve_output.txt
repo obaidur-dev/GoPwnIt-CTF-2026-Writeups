@@ -1,0 +1,4 @@
+.zplus bytes: 7a 11 22 70 11 22 7a 11 22 70 11 22 7a 11 22 6c 11 22 7a 11 22 70 11 22 7a 11 22 6c 11 22 75 11 33 73 11
+program: xor shl xor shl xor shr xor shl xor shr comp ret
+target  : 80a8d8bca4844c1434ec001438d4d41458ec808c9c 21 bytes
+input that passes the check: zplus{I_WaZ_Too_Lazy}

@@ -1,0 +1,76 @@
+$ cat signer.py
+"""
+Saltcellar -- release signer.
+
+The nonce comes off the rig's counter, which advances in fixed steps. Taking a
+counter reading straight as the nonce was rejected at review -- consecutive
+releases would have had consecutive nonces -- so the reading is randomised
+first and then scaled back onto the counter grid, which keeps the nonce aligned
+to a step boundary the way the audit trail expects.
+
+The nonce is a full-width value either way, so nothing is lost.
+"""
+import hashlib
+import secrets
+
+N = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141
+
+# The counter step. Odd, and fixed for the lifetime of the rig.
+STEP = 0x9E3779B97F4A7C15
+RANDOM_BITS = 192
+
+
+def nonce() -> int:
+    while True:
+        k = STEP * secrets.randbits(RANDOM_BITS)
+        if 1 <= k < N:
+            return k
+
+
+def digest(message: str) -> int:
+    return int.from_bytes(hashlib.sha256(message.encode()).digest(), "big") % N
+
+
+def sign(d: int, message: str, mul_g):
+    """mul_g(k) -> k*G on secp256k1."""
+    k = nonce()
+    r = mul_g(k)[0] % N
+    s = pow(k, -1, N) * (digest(message) + r * d) % N
+    return r, s
+
+$ cat notes.md
+# Saltcellar
+
+Forty release signatures from one secp256k1 key, in `signatures.txt`, along
+with the public key. The signing routine is `signer.py`.
+
+- Curve: **secp256k1**, standard parameters.
+- Hash: `h = int(sha256(message)) mod n`, message bytes as given.
+- Nonce: see `signer.py`. It is a full-width 256-bit value. It is also always a
+  multiple of 0x9E3779B97F4A7C15, which costs it 64 bits of range out of
+  192 random ones.
+- `flag.enc` is hex. The flag was combined byte by byte with
+
+      sha256(d.to_bytes(32, "big")).digest()
+
+  repeated as many times as the flag is long, where `d` is the private key.
+
+40 signatures are provided. You will not need all of them, and adding more
+than you need is not free.
+
+$ head -12 signatures.txt
+# Saltcellar -- forty release signatures from one key.
+#
+# One signature per block. The message is signed as
+#     h = int(sha256(message)) mod n
+# and the signature is the usual ECDSA (r, s) over secp256k1.
+
+public_key_x = 0x5cbb375ba8bf1500f2631ec7a91c6d979da5d930e2d06e146a2886f3b2b4d37e
+public_key_y = 0xabd5f3535cf3eec0b26c8de05cf244d9a862662d96636e692a9c5897c8419992
+
+[00]
+message = "consignment 000 released to the carrier named on the docket"
+r = 0x62b9408e93ecb5192261cf60bf2829a5dc766e9f4cc2aae117264df1b24effe1
+$ cat flag.enc
+fba47fabe73de69166efb1df8685d3149a40f95e78412006f48e89a1e00fefa688ab45b8a233a1b3
+

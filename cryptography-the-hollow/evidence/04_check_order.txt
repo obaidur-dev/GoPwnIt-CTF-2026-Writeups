@@ -1,0 +1,21 @@
+$ python3 -I solve_3_check_order.py stage2.txt
+2 True False
+2039 True True
+4049 True True
+9203 True True
+10847 True True
+12413 True True
+21521 True True
+28813 True True
+37549 True True
+39821 True True
+43577 True True
+44687 True True
+48989 True True
+50651 True True
+50929 True True
+54091 True True
+57251 True True
+136973113 True True
+754799435023 True True
+BIG True True

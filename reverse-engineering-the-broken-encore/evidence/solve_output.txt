@@ -1,0 +1,20 @@
+expected from choreography.dat: 7bc8386f3a8f30eaaf8a
+fragment 0: 2372f289d37d29394982
+fragment 1: 046737216602f8fd12f1 (from memcmp call #1)
+fragment 2: 17c9af5ebe37dbcd43bc (from memcmp call #2)
+fragment 3: 6a66d4fab5cd9ad24905 (from memcmp call #3)
+fragment 4: e3ad427e2f896afde869 (from memcmp call #4)
+flag: ENCORE{2372f289d37d29394982046737216602f8fd12f117c9af5ebe37dbcd43bc6a66d4fab5cd9ad24905e3ad427e2f896afde869}
+[*] Initiating rehearsal cue synchronization verification...
+[+] [CUE-FOOTWORK-01] Footwork sequence synchronized.
+[+] [CUE-RHYTHM-02] Rhythm Machine VM synchronized.
+[+] [CUE-VAULT-03] Rehearsal Vault chunk synchronized.
+[+] [CUE-LIGHTS-04] Lighting Score matrix synchronized.
+[+] [CUE-ENCORE-05] Master Encore sequence synchronized.
+
+============================================================
+[+] ALL 5 REHEARSAL CUES SYNCHRONIZED!
+[+] The Broken Encore has been fully restored.
+============================================================
+
+exit code 0

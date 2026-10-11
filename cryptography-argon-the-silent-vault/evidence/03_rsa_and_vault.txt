@@ -1,0 +1,4 @@
+$ python3 -I solve3_vault.py pkg
+gcd 1 -20737 13590
+T e764bc99bc0e2cfd6233cd9f911004950462783355b191475ec2c353e97bd9fb b'\xe7d\xbc\x99\xbc\x0e,\xfdb3\xcd\x9f\x91\x10\x04\x95\x04bx3U\xb1\x91G^\xc2\xc3S\xe9{\xd9\xfb'
+b'GPI{argon_d5e6376be1105fffc0e40e9ffcf08f52}'

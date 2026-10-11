@@ -1,0 +1,18 @@
+program text built by the exe:
+xor [value] [key]
+shl [value] [key]
+xor [value] [key]
+shl [value] [key]
+xor [value] [key]
+shr [value] [key]
+xor [value] [key]
+shl [value] [key]
+xor [value] [key]
+shr [value] [key]
+comp [value] [target]
+ret [value]
+
+zplus{I_WaZ_Too_Lazy}        -> Correct
+GPI{I_WaZ_Too_Lazy}          -> Incorrect
+zplus{I_WaZ_Too_Lazy!}       -> Incorrect
+wrong 9-step program gives: b'\xdf\xd5\xc9\xd0\xd6\xde\xec\xfa\xf2\xc4\xff\xfa\xf1\xca\xca\xfa\xe9\xc4\xdf\xdc\xd8'

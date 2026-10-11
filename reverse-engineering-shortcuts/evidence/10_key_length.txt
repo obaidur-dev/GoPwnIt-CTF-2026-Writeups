@@ -1,0 +1,2 @@
+$ printf %s "$KEY" | wc -c
+64

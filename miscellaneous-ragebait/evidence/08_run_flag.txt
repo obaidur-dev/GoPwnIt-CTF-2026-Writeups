@@ -1,0 +1,31 @@
+$ printf 'GPI{b3y0nd_41_l0g1c_r3c0nstruct10n_9f82}
+exit
+' | wine64 dist/golev_windows_amd64.exe
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                          GO LEV — THE EGO CHECK                           ║
+║          "The easiest Misc challenge in human history" — Author           ║
+║                     Difficulty: Easy (In your dreams)                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+[*] Initializing Go Runtime Memory Subsystem...
+[*] Calibrating Non-Euclidean Levenshtein Distance Matrix...
+[*] Spawning 7-Goroutine CSP Petri-Net Channel Mesh...
+[*] AI Defense Sensors: ARMED (Adversarial injections active)
+─────────────────────────────────────────────────────────────────────────────
+Your ego walked in at Level 100.
+Let's see if your skills survive Level 1.
+─────────────────────────────────────────────────────────────────────────────
+
+[?] Enter candidate flag to calculate your Ego Distance: 
+╔═══════════════════════════════════════════════════════════════════════════╗
+║               [!] TRUE GOD TIER ACHIEVED: STAGE 2 CONQUERED               ║
+║                  YOU ACTUALLY REVERSED IT NATIVELY                        ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+ [-] Native Execution Self-Hash: VERIFIED (6411a82c02856628...)
+ [-] Reconstructed Static AI Logic: BYPASSED & DEFEATED
+ [-] Real Problem Solving Skills: LEVEL 100
+
+ [+] OFFICIAL TOURNAMENT FLAG: GPI{b3y0nd_41_l0g1c_r3c0nstruct10n_9f82}
+ [+] You have permanently shattered the author's ego. Masterclass.
+─────────────────────────────────────────────────────────────────────────────
+

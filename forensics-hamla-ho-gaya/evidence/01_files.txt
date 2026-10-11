@@ -1,0 +1,4 @@
+total 8236
+-rw-rw-rw- 1 root root   33440 Oct 10 13:11 logs.txt
+-rw-rw-rw- 1 root root 8388663 Oct 10 13:11 memory.mem
+-rw-rw-rw- 1 root root    1384 Oct 10 13:11 traffic.pcap

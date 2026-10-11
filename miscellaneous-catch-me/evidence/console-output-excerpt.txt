@@ -1,0 +1,16 @@
+Excerpt of the console.table() output I got on the challenge page
+(copied from the real output; 50 rows total, only some rows shown here).
+Every decoy row has 24 chars ending in "==" and decodes to 16 random bytes.
+
+n    raw                          dec
+1    hoKTu1nb7s0SJjWrn5ebdQ==     (random bytes)
+2    rQafnWeFP1Ng9p1zp+r8Qg==     (random bytes)
+...
+17   R1BJe1RIME5LWU9VX0QxUk       GPI{TH0NKYOU_D1R
+...
+37   xJTkdfVDBfRjhJTkRfTTF9       (random bytes when decoded alone)
+...
+50   ARqvHeROfi1Hu114tupGAg==     (random bytes)
+
+Rows 17 and 37 are the only two without "==" at the end. Row 17 is the only
+one that decodes to readable text.

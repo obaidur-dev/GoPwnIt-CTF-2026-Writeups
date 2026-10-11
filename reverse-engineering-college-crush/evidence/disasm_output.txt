@@ -1,0 +1,32 @@
+$ objdump -d -M intel --no-show-raw-insn college_crush.exe   (VM handlers, 0x140001f21-0x1400020ae)
+   140001f1e:	cmp    eax,0x6c
+   140001f21:	je     0x140002092
+   140001f27:	cmp    eax,0x70
+   140001f2a:	je     0x140002070
+   140001f30:	cmp    eax,0x73
+   140001f33:	je     0x1400020c7
+   140001f39:	cmp    eax,0x75
+   140001f3c:	je     0x140002020
+   140001f42:	cmp    eax,0x7a
+   140001f45:	jne    0x1400020b0
+   140002004:	je     0x1400020b0
+   140002010:	xor    BYTE PTR [rax],0x5a
+   14000201b:	jmp    0x1400020b0
+   140002057:	jmp    0x1400020b0
+   14000206e:	jmp    0x1400020b0
+   14000207a:	je     0x1400020b0
+   140002083:	ror    al,0x6
+   140002090:	jmp    0x1400020b0
+   14000209c:	je     0x1400020b0
+   1400020a3:	ror    al,0x2
+
+$ objdump ... (target bytes stored in main)
+   14000244b:	mov    DWORD PTR [rsp+0x30],0xbcd8a880
+   140002453:	mov    DWORD PTR [rsp+0x34],0x144c84a4
+   14000245b:	mov    DWORD PTR [rsp+0x38],0x1400ec34
+   140002463:	mov    DWORD PTR [rsp+0x3c],0x14d4d438
+   14000246b:	mov    DWORD PTR [rsp+0x40],0x8c80ec58
+   140002473:	mov    BYTE PTR [rsp+0x44],0x9c
+
+$ memory at 0x140007630 (xor constant used by the 16-byte xor path)
+5a5a5a5a

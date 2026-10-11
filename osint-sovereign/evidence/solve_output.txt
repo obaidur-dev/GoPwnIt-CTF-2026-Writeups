@@ -1,0 +1,12 @@
+37510 = STATION: AN/FLR-9 | TARGET: BOUVET | EVENT: 1979 | HASH: 8f2c9a
+270 = Field survey of sub-Antarctic HFDF listening perimeter. Target: Bouvet Island. Station: AN/FLR-9. Auth: 8f2c9a
+271 = Nikon
+272 = Nikon D1X
+305 = MediaWiki Commons Upload Bot v1.4
+306 = 2004:10:24 14:12:00
+315 = SovereignCartographer
+Hexadecimal authorization crumb: 8f2c9a
+id=Q31057:P625:WULLENWEBER
+Format: GPI{<antenna_code>_<target_island>_<incident_year>_<hex_auth>}
+antenna=anflr9 island=bouvet year=1979 hex=8f2c9a
+GPI{anflr9_bouvet_1979_8f2c9a}

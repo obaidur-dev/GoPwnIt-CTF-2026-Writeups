@@ -1,0 +1,8 @@
+$ python3 -I solve.py handout 10
+40 sigs
+d = 0x5005554fa55b9e811a71e69c7caa0ad95768469ef5e8b363b363b2a77dfddc2f
+b'GPI{th3_b14s_w4s_4_mult1pl3_n0t_4_sh1ft}'
+
+real	0m2.520s
+user	0m0.358s
+sys	0m0.106s

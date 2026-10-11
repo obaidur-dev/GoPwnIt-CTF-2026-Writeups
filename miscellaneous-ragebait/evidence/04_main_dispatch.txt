@@ -1,0 +1,15 @@
+$ python3 helpers/gdis.py dist/golev_windows_amd64.exe main.main | grep -E "cmp rbx, 0x|memequal|GetBinary|Process|Execute|Evaluate"
+1400bacc9: cmp rbx, 0x28
+1400bacd3: lea rbx, [rip + 0x441fc] ; ->0x1400feed6 'GPI{b3y0nd_41_l0g1c_r3c0nstruct10n_9f82}time: Stop called on uninitial'
+1400bace0: call 0x140003140 ; runtime.memequal
+1400bad0f: call 0x1400ba080 ; ragebait/golev/internal/engine.GetBinaryRuntimeHash
+1400bad80: cmp rbx, 0x25
+1400bad86: lea rbx, [rip + 0x43818] ; ->0x1400fe5a5 'GPI{g0_l3v_3g0_sh4tt3r3d_n0_41_9f82c}222044604925031308084726333618164'
+1400bad92: call 0x140003140 ; runtime.memequal
+1400bade0: call 0x140003140 ; runtime.memequal
+1400bae00: cmp rbx, 0x25
+1400bae18: call 0x1400b9140 ; ragebait/golev/internal/engine.(*EgoOracle).Evaluate
+1400bb0ce: call 0x1400b8d20 ; ragebait/golev/internal/engine.(*CSPPipeline).Process
+1400bb231: call 0x1400ba240 ; ragebait/golev/internal/engine.(*EgoVM).Execute
+1400bb458: lea rbx, [rip + 0x44557] ; ->0x1400ff9b6 ' [-] Native Execution Self-Hash: VERIFIED (GPI{chatgpt_told_me_this_wa'
+1400bb75a: call 0x1400b9140 ; ragebait/golev/internal/engine.(*EgoOracle).Evaluate

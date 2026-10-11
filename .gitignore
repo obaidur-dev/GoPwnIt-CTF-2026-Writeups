@@ -1,0 +1,38 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Packaging
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Solver intermediates.
+# ARGON's three scripts hand state to each other through d.txt and bundle.json,
+# and The Hollow writes H.bin / stage2.txt. All of these are regenerated on a run.
+d.txt
+bundle.json
+H.bin
+stage2.txt
+*.bin.tmp
+
+# Extraction scratch
+out/
+ev/
+work/
+pkg/
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

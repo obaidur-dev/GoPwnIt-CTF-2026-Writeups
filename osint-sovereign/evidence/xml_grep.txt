@@ -1,0 +1,4 @@
+$ grep -n -i -E "cite|quote|hexadecimal|<!--|id=" wikipedia_history_dump.xml
+30:&lt;!-- TELEMETRY CIPHER INTEGRITY CHECK: PASS --&gt;
+31:In September 1979, atmospheric flash detection sensors (Vela satellite 6911) detected a double-flash signal southeast of Prince Edward Island and west of Bouvet Island.&lt;ref name="sigint_telemetry"&gt;{{cite journal | author=Naval Oceanic Command | title=Sub-Antarctic Acoustic Hydrophone Array Telemetry | journal=Polar Signal Review | year=1984 | volume=12 | pages=77–92 | id=Q31057:P625:WULLENWEBER | quote=Long-range High-Frequency Direction Finding (HFDF) station AN/FLR-9 recorded signal convergence. Hexadecimal authorization crumb: 8f2c9a}}&lt;/ref&gt;
+45:      <comment>Reverted edits by [[Special:Contributions/SovereignCartographer|SovereignCartographer]] to last version by Neutrality: Uncited Cold War military conspiracy theories</comment>

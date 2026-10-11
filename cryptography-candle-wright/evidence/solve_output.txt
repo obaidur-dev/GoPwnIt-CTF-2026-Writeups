@@ -1,0 +1,57 @@
+ciphertext length: 1491
+key length  1  IC 0.0102
+key length  2  IC 0.0102
+key length  3  IC 0.0222
+key length  4  IC 0.0100
+key length  5  IC 0.0098
+key length  6  IC 0.0224
+key length  7  IC 0.0101
+key length  8  IC 0.0098
+key length  9  IC 0.0612
+key length 10  IC 0.0097
+key length 11  IC 0.0094
+key length 12  IC 0.0220
+key length 13  IC 0.0096
+key length 14  IC 0.0099
+key length 15  IC 0.0218
+key length 16  IC 0.0098
+key length 17  IC 0.0097
+key length 18  IC 0.0620
+key length 19  IC 0.0103
+xor key: [192, 18, 151, 152, 120, 18, 11, 82, 189]
+-----MEMO-----
+TALLOW & CO -- CHANDLERY
+INTERNAL. DUTY CHANDLER TO THE NIGHT ARCHIVIST.
+
+The operator code for this week is GPI{r3p34t1ng_k3ys_n3v3r_r3p34t_3n0ugh}. Every clerk on the floor needs it,
+which is precisely why it is not, and has never been, the dispatch flag. Three
+clerks handed that code over as the flag during the guild audit last spring and
+all three are now counting wick in the annexe. Do not be the fourth.
+
+The dispatch flag is in the sealed line at the foot of this memo. To open it:
+
+  - take the operator code exactly as it appears between the braces
+  - discard every character that is not a letter
+  - advance each remaining letter through the alphabet by its own position in
+    what is left, counting the first letter as one, wrapping past z back to a
+  - lowercase the result
+
+That is the dispatch key. The sealed line is the dispatch flag combined byte by
+byte with the sha-256 digest of that key, the digest repeated as many times as
+the line is long. Combined the same way this memo is: no cleverer, and no
+cleverer is needed, because nobody outside this floor can derive the key.
+
+The archivist will ask whether the key should be written in the register. It
+should not. The register is for keys the guild is allowed to see, and this one
+is not, which is the distinction the annexe is currently teaching three people.
+
+Burn this after reading, which nobody has ever once done.
+
+sealed line (base64):
+DAmiqtIS+gD6aNtWQU363hwJHNnj10toNS+y4LBI49s3DuGu7AzsG65Rw18VKLjreCNU2K0=
+
+--------------
+operator code: r3p34t1ng_k3ys_n3v3r_r3p34t_3n0ugh
+dispatch key : srwrlqfawfcdchckxz
+sealed line  : dispatch flag: GPI{r34d_th3_m3m0_n0t_just_th3_br4c3s}
+flag         : GPI{r34d_th3_m3m0_n0t_just_th3_br4c3s}

@@ -1,0 +1,44 @@
+$ printf 'GPI{g0_l3v_3g0_sh4tt3r3d_n0_41_9f82c}
+exit
+' | wine64 dist/golev_windows_amd64.exe
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                          GO LEV — THE EGO CHECK                           ║
+║          "The easiest Misc challenge in human history" — Author           ║
+║                     Difficulty: Easy (In your dreams)                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+[*] Initializing Go Runtime Memory Subsystem...
+[*] Calibrating Non-Euclidean Levenshtein Distance Matrix...
+[*] Spawning 7-Goroutine CSP Petri-Net Channel Mesh...
+[*] AI Defense Sensors: ARMED (Adversarial injections active)
+─────────────────────────────────────────────────────────────────────────────
+Your ego walked in at Level 100.
+Let's see if your skills survive Level 1.
+─────────────────────────────────────────────────────────────────────────────
+
+[?] Enter candidate flag to calculate your Ego Distance: 
+╔═══════════════════════════════════════════════════════════════════════════╗
+║               [!] AI DETECTED: THE 1m 12s RECONSTRUCTION TRAP             ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+ [-] "Verification used reconstructed cipher logic, not native execution."
+ [-] Did you really paste the decompiled Feistel cipher into an LLM?
+ [-] An AI spent 1 minute 12 seconds in thinking mode reversing the bait!
+ [-] And you submitted it with the confidence of a senior security engineer.
+ [-] Scoreboard points awarded: 0.
+ [-] AI reliance detected: 100%.
+
+ [?] Did you think Level 1 was the real challenge? That was the filter.
+ [!] STAGE 2 UNLOCKED: THE REAL EGO CHECK.
+     The real flag requires native runtime execution and binary self-integrity.
+     Static cipher reconstruction without native execution will fail 100% of the time.
+─────────────────────────────────────────────────────────────────────────────
+[?] Enter candidate flag to calculate your Ego Distance: 
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                         EGO ASSESSMENT TELEMETRY                          ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+ [-] Evaluated Candidate: exit
+ [-] Apparent Levenshtein Distance: 44
+ [-] Ego Integrity Remaining: 12%
+ [!] Author Diagnostic: "Scoreboard status: Still 0 points. Your teammates are talking about you in private DMs."
+─────────────────────────────────────────────────────────────────────────────
+[?] Enter candidate flag to calculate your Ego Distance: 

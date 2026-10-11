@@ -1,0 +1,22 @@
+# Keep line endings stable across platforms. The solvers are written for Linux and
+# the evidence files are pasted terminal output, so store everything as LF and check
+# out LF everywhere. Without this, Windows checkouts rewrite every file to CRLF and
+# the diffs turn into noise.
+* text=auto eol=lf
+
+# These are not text.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.tgz binary
+*.rar binary
+*.exe binary
+*.7z binary
+*.pcap binary
+*.pcapng binary
+*.img binary
+*.mem binary

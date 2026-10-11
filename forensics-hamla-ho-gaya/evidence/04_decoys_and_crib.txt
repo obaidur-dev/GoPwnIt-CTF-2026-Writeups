@@ -1,0 +1,5 @@
+plaintext FLAG in memory.mem: [('0x500000', b'FLAG{m3m0ry_f0r3n51c5_m45t3r}')]
+plaintext FLAG in pcap: [b'FLAG{h1dd3n_1n_pl41n_51ght}']
+crib m3m0ry at payload offset 30 -> key bytes b'******'
+crib m3m0ry at payload offset 33 -> key bytes b'wk>E.c'
+crib m3m0ry at payload offset 35 -> key bytes b'>F1*i7'

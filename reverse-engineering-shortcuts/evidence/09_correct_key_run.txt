@@ -1,0 +1,45 @@
+$ printf '%s\n' 'it_just_keeps_spinning_around_until_it_looks_nice_and_unreadable' | ./treasurebox
+     +---- 
+     |
+     v +--------+
+ |it_just_|
+ |keeps_sp|
+ |inning_a|
+ |round_un|
+ |til_it_l|
+ |ooks_nic|
+ |e_and_un|
+ |readable|
+ +--------+
+     |
+     v
+ +--------+
+ |_je_ipus|
+ |kt_ssept|
+ |nniannu_|
+ |oin_rugd|
+ |oiil_ck_|
+ |tonlst_i|
+ |nr_naelu|
+ |ede_bdaa|
+ +--------+
+     |
+     v
+ +--------+
+ |algakrwu|
+ |mvauugrv|
+ |ppkcppwa|
+ |qkpatwif|
+ |qkknaema|
+ |vqpnuvak|
+ |ptapcgnw|
+ |gfgadfcc|
+ +--------+
+     |
+     +---> algakrwumvauugrvppkcppwaqkpatwifqkknaemavqpnuvakptapcgnwgfgadfcc ---+
+|
+---+algakrwumvauugrvppkcppwaqkpatwifqkknaemavqpnuvakptapcgnwgfgadfcc||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+     The box happily accepts your key!
+
+exit code: 0

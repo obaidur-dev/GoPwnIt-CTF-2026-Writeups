@@ -1,0 +1,24 @@
+$ strings -n 6 dist/golev_linux_amd64 | grep -o "GPI{[^}]*}"
+GPI{ai_hallucination_trap_you_fell_for_it_lol}
+GPI{b3y0nd_41_l0g1c_r3c0nstruct10n_9f82}
+GPI{brut3_f0rc3_l3v3nsht31n_w4st3d_y0ur_t1m3}
+GPI{chatgpt_told_me_this_was_the_flag_lmao}
+GPI{congratulations_on_finding_fake_flag_0x42}
+GPI{did_you_try_submitting_this_to_the_scoreboard_yet}
+GPI{easy_peasy_lemon_squeezy_said_the_author}
+GPI{g0_l3v_3g0_ch3ck_f41l3d_brut3_f0rc3r_l0l}
+GPI{g0_l3v_3g0_sh4tt3r3d_n0_41_9f82c}
+GPI{g0_runt1m3_4n4lys1s_f41l3d_m1s3r4bly}
+GPI{ghidra_decompilation_wont_save_you_today}
+GPI{have_you_tried_turning_your_brain_off_and_on}
+GPI{level_100_confidence_level_0_skill}
+GPI{look_mom_i_found_a_flag_in_rodata}
+GPI{senior_security_engineer_moment_321}
+GPI{strings_command_is_not_a_personality_trait}
+GPI{you_really_thought_the_author_was_that_stupid_huh}
+GPI{z3_theorem_prover_exploded_with_oom}
+
+$ strings ... | grep -E "Level 1|real flag|DECOY|HONEYPOT"
+DECOY FLAG DETECTED
+HONEYPOT REACHED
+The real flag requires native runtime execution and binary self-integrity.

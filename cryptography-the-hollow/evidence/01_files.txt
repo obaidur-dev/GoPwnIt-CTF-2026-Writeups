@@ -1,0 +1,71 @@
+$ cat notes.md (first part)
+# The Hollow
+
+Three envelopes off the batch-07 relay, one encrypted parameter file, and a
+sealed flag. Nothing here needs a library; everything here needs an
+implementation.
+
+## The Hollow envelope
+
+An envelope is `(nonce, ciphertext, tag)` under a 128-bit **fold key** `H`.
+The same `H` does both jobs: it is the MAC's evaluation point and it is the
+seed the file keys are derived from. This was raised at review and recorded as
+"acceptable, one key is easier to rotate".
+
+**Encryption** is a counter-mode keystream:
+
+    keystream = sha256(H || nonce || 0) || sha256(H || nonce || 1) || ...
+
+with `H` as 16 big-endian bytes and the counter as 4 big-endian bytes. The
+ciphertext is the plaintext XORed with as much of it as is needed.
+
+**The tag** is a polynomial MAC over the ciphertext, evaluated at `H`, masked
+by a nonce-derived constant:
+
+    acc = 0
+    for each 16-byte block B of ciphertext (zero-padded if short):
+        acc = (acc XOR B) . H
+    acc = (acc XOR L) . H
+    tag = acc XOR S
+
+where
+
+- `.` is multiplication in **GF(2^128)** modulo `x^128 + x^7 + x^2 + x + 1`,
+  in the bit ordering of NIST SP 800-38D section 6.3: a block is read as 16
+  big-endian bytes, and the **most significant bit of the first byte is the
+  coefficient of x^0**. Get this backwards and every value you compute will be
+  wrong in a way that still looks like a field element.
+- `L` is the length block: eight zero bytes, then the ciphertext length in
+  **bits** as eight big-endian bytes.
+- `S = sha256(H || nonce || "tag")[:16]`, as a 16-byte big-endian integer.
+
+## Files
+
+- **`envelopes.txt`** -- three envelopes. The relay re-sent batch 07 twice after
+  the first attempt was not acknowledged, and the nonce is the batch sequence
+  number.
+
+$ cat envelopes.txt
+# The Hollow -- three envelopes off the batch-07 relay.
+#
+# nonce, ciphertext and tag are hex. The construction is in notes.md.
+
+[0]
+nonce      = 5468654e6f6e63655265757365
+ciphertext = 499331bb2c1ed4ca2619225217ed104e
+tag        = c1a7a2d6bbf51f7146a70d2ea0d39029
+
+[1]
+nonce      = 5468654e6f6e63655265757365
+ciphertext = 539931ba6d0fd09e2710760148ec0158
+tag        = 46eca50ed0fb20c5af83e9e84255dadb
+
+[2]
+nonce      = 5468654e6f6e63655265757365
+ciphertext = 5a9b38b0294dd38b301b3e114ffa0001
+tag        = 01078d1487f1cfb2e89dd2413dc3224f
+$ cat flag.enc
+6caf96cdc298aa3ce27b4e1586b527b8c7d772367141e83a3ec03ef2e7b37c45a33ae3a4b815e7f2f741f4a45a
+
+$ python3 -c "print(open(\"stage2.bin\",\"rb\").read().hex())"
+2961a5cc8267e185586f75c8d31c4b2b8a16589df5b4f0ce48d84fe8f53aa0f8bfe8db8be79e0dfc62b8c9cf688d375806c995a0033b3bcf24ef3c564d52c4fe8678d91b78e6c01f5f2bda899cb706676570d00b95d1f9d789d85da8ebe86d2946e7ca63f2281ac6664a9680c34127036002aec74bde29660d7c92983ad1f5858033ebeb69df6cb126f6e1b740066b5bcae9a0487a8fd677f3aff637637e57dfbf65b7a0953112dc663b5775b3a47eab297cf155ac961613420fa121e013f535907160266b763a77d25cbf3140e3a7733721dee0407ddaa8df5826cf2ab5728f8175b120fbb616d04ad875e4ed958a85d2de1f198385e8fe4f8e20a7aa93bf31b4b382803927f3209c415a434ce2b4da8db9b16b3716f5f252557c2a8f76afcaad891236d517e3f6afe2d8ccd15539ae88e74edaa60ff477c1ed1495d8c1fbeaaa37c16726db

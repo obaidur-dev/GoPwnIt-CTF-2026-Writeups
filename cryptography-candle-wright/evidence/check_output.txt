@@ -1,0 +1,9 @@
+$ python3 check.py 'GPI{r3p34t1ng_k3ys_n3v3r_r3p34t_3n0ugh}'  (operator code, the decoy)
+rejected -- that is this week's operator code, not the dispatch flag.
+            The memo says so, twice. Read the rest of it.
+
+$ python3 check.py 'dispatch flag: GPI{r34d_th3_m3m0_n0t_just_th3_br4c3s}'  (with the label, my mistake)
+rejected.
+
+$ python3 check.py 'GPI{r34d_th3_m3m0_n0t_just_th3_br4c3s}'
+accepted -- that is the dispatch flag.

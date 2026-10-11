@@ -1,0 +1,9 @@
+packets: 4400
+Ether / IP / ICMP 10.20.0.57 > 192.0.2.9 echo-request 0 / Raw 1717400000.0
+Ether / IP / ICMP 192.0.2.9 > 10.20.0.57 echo-reply 0 / Raw 1717400000.022
+Ether / IP / ICMP 10.20.0.57 > 192.0.2.9 echo-request 0 / Raw 1717400001.257
+Ether / IP / ICMP 192.0.2.9 > 10.20.0.57 echo-reply 0 / Raw 1717400001.279
+Ether / IP / UDP / DNS Qry b'www.vesperspruce.example.' 1717400001.734
+Ether / IP / UDP / DNS Qry b'www.northnimbus.example.' 1717400001.997
+Ether / IP / ICMP 10.20.0.57 > 192.0.2.9 echo-request 0 / Raw 1717400002.254
+Ether / IP / ICMP 192.0.2.9 > 10.20.0.57 echo-reply 0 / Raw 1717400002.273

@@ -1,0 +1,4 @@
+$ python3 -I -c "isprime on the 3 big factors"
+28 True
+40 True
+200 True

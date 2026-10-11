@@ -1,0 +1,17 @@
+$ unzip -l dist.zip
+Archive:  /mnt/user-data/uploads/1791635369181-dist.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+        0  2026-10-10 12:25   dist/
+  1969152  2026-10-10 12:25   dist/golev_linux_amd64
+  1969152  2026-10-10 12:24   dist/golev_windows_amd64.exe
+---------                     -------
+  3938304                     3 files
+
+$ file dist/*
+dist/golev_linux_amd64:       PE32+ executable (console) x86-64, for MS Windows, 8 sections
+dist/golev_windows_amd64.exe: PE32+ executable (console) x86-64, for MS Windows, 8 sections
+
+$ sha256sum dist/*
+5b96971ccf80f0b2a3ad63194610095c2fc000bbb6fcea26dfcaf61fa35e9a6c  dist/golev_linux_amd64
+cf56f77b068314b367f76411a4e0ada5c10fbe40b961ffb0e4c1d2f520e57a1f  dist/golev_windows_amd64.exe

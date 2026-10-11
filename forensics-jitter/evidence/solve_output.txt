@@ -1,0 +1,5 @@
+echo requests: Counter({('10.20.0.57', '192.0.2.9', 19745): 1300, ('10.20.0.99', '192.0.2.50', 6663): 500})
+timing: b"\xaaU\\IP-ID low byte of each request: u16be L, nonce[12], AES-256-GCM. key=SHA256('TIDEMARK-0619')"
+ttl   : b'GPI{ttl_b1ts_4r3_th3_cl3v3r_0n3_r1ght_d913}'
+ip-id length field: 85
+ip-id AES-GCM decrypted (tag OK): GPI{th3_p4yl04d_w4s_n01s3_th3_g4ps_w3r3_th3_m3ss4g3_d5b0}

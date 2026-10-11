@@ -1,0 +1,17 @@
+$ python3 helpers/decoylist.py dist/golev_windows_amd64.exe
+slice ptr 0x1401d3f00 count 15
+0 47 GPI{strings_command_is_not_a_personality_trait}
+1 54 GPI{you_really_thought_the_author_was_that_stupid_huh}
+2 43 GPI{chatgpt_told_me_this_was_the_flag_lmao}
+3 46 GPI{congratulations_on_finding_fake_flag_0x42}
+4 39 GPI{level_100_confidence_level_0_skill}
+5 54 GPI{did_you_try_submitting_this_to_the_scoreboard_yet}
+6 46 GPI{ai_hallucination_trap_you_fell_for_it_lol}
+7 45 GPI{ghidra_decompilation_wont_save_you_today}
+8 45 GPI{brut3_f0rc3_l3v3nsht31n_w4st3d_y0ur_t1m3}
+9 38 GPI{look_mom_i_found_a_flag_in_rodata}
+10 45 GPI{easy_peasy_lemon_squeezy_said_the_author}
+11 41 GPI{g0_runt1m3_4n4lys1s_f41l3d_m1s3r4bly}
+12 40 GPI{z3_theorem_prover_exploded_with_oom}
+13 40 GPI{senior_security_engineer_moment_321}
+14 49 GPI{have_you_tried_turning_your_brain_off_and_on}

@@ -1,0 +1,32 @@
+# Union of every solver's dependencies across the 13 writeups.
+# You almost certainly do not need all of these. Each writeup lists what its own
+# solver needs in the "Tools used" section, and most solvers are stdlib-only.
+#
+#   pip install -r requirements.txt
+
+# --- Cryptography ---
+argon2-cffi                      # ARGON: Argon2id vault key
+cryptography                     # ARGON: HKDF + AES-GCM
+fpylll                           # ARGON, Saltcellar: LLL / BKZ lattice reduction
+sympy                            # The Hollow: factoring, CRT
+
+# --- Forensics ---
+scapy                            # Jitter: pcap parsing
+pycryptodome                     # Jitter: AES-GCM
+
+# --- Reverse engineering ---
+pefile                           # Ragebait, college_crush: PE parsing
+capstone                         # Ragebait: disassembly of main.main
+unicorn                          # college_crush: verify_emu.py, runs the exe's VM
+py7zr                            # college_crush: handout is 7-zip wearing a .tgz name
+libarchive-c                     # SHORTCUTS: extract.py, for the RAR5 handout
+
+# --- OSINT ---
+pillow                           # Sovereign: solve.sh, EXIF extraction
+
+# Notes:
+#   fpylll has no wheels for every platform and may need a C++ toolchain
+#   (build-essential / Xcode CLT) to install.
+#   libarchive-c needs the system libarchive shared library:
+#     Debian/Ubuntu  apt install libarchive-dev
+#     macOS          brew install libarchive

@@ -1,0 +1,14 @@
+$ python3 -I solve_1_recover_H.py handout H.bin stage2.txt
+cts len [16, 16, 16]
+['0xd59d9939a0820f4dde7417d787839399']
+pt b'release batch 07'
+tag ok True
+pt b'hold batch 07!!!'
+tag ok True
+pt b'amend batch 07 x'
+tag ok True
+# vault parameters, recovered from the stage-1 envelope
+p = 0x8f96f1c50bca5b541b29cb07faff71cf91550ff66da9b29def479113b8db30374c58236d5c831c7dcce3225b8049d6a79f5bd777c378388e101559f5cedb3
+g = 2
+y = 0x6d77df6e0197809bc77d6a48062050b8b0e33e6e515e6dd443c5f6e99e7a3e282451398b8b6fc7f37078275709ad6426c663233b300512332984da4555473
+

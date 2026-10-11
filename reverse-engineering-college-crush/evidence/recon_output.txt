@@ -1,0 +1,30 @@
+$ file college_crush.tgz
+46ceca73-1791624486615-college_crush.tgz: 7-zip archive data, version 0.4
+
+$ tar xzf college_crush.tgz
+
+gzip: stdin: not in gzip format
+
+$ file college_crush.exe
+college_crush.exe: PE32+ executable (console) x86-64, for MS Windows, 7 sections
+
+$ strings -n 5 college_crush.exe | grep -E "Enter|Correct|Incorrect|\[value\]|\[key\]|\[target\]|Zware"
+[value]
+[key]
+[target]
+Correct
+Incorrect
+Enter The Flag : 
+D:\code\C++\Zware\x64\Release\Zware.pdb
+
+$ section list
+.text 0x1000 0x5d33
+.rdata 0x7000 0x3114
+.data 0xb000 0x4f0
+.pdata 0xc000 0x684
+.zplus 0xd000 0x23
+.rsrc 0xe000 0x1e0
+.reloc 0xf000 0x94
+
+$ strings in .rdata at 0x7484 (the opcode names)
+b'xor\x00shl\x00shr\x00comp\x00\x00\x00\x00ret\x00\x00\x00\x00\x00[value]\x00[key]\x00\x00\x00[target]\x00\x00\x00\x00\x00\x00\x00\x00'

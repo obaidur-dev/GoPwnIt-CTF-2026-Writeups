@@ -1,0 +1,2 @@
+$ strace -e trace=read ./treasurebox   (input read: 65 bytes max)
+read(0, "AAAA\n", 65)                   = 5

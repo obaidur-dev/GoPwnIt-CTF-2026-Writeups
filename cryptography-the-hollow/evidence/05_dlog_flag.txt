@@ -1,0 +1,7 @@
+$ python3 -I solve_4_dlog_flag.py handout stage2.txt H.bin flag.enc
+M bits 300 x bits 297 g^x==y: True
+b'GPI{0n3_f0ld_k3y_tw0_j0bs_4nd_4_sm00th_pr1m3}'
+
+real	0m2.494s
+user	0m2.270s
+sys	0m0.212s
